@@ -20,7 +20,7 @@ to test the cronjob functions &#xD;
 docker exec -it &amp;lt;dockername&amp;gt; ./config/cronjob.sh</Overview>
   <Category>Downloaders: Tools:</Category>
   <WebUI/>
-  <TemplateURL>https://github.com/alturismo/unraid_templates</TemplateURL>
+  <TemplateURL>https://github.com/alturismo/unraid_templates/blob/master/my-owi2plex.xml</TemplateURL>
   <Icon/>
   <ExtraParams/>
   <PostArgs/>
