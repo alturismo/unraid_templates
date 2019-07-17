@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>owi2plex</Name>
+  <Repository>alturismo/owi2plex</Repository>
+  <Registry>https://hub.docker.com/r/alturismo/owi2plex</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/alturismo/owi2plex</Project>
+  <Overview>a xml grabber for enigma with open webif&#xD;
+&#xD;
+after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them&#xD;
+&#xD;
+cron options are updated on docker restart.&#xD;
+cronjob changes doesnt require a restart.&#xD;
+&#xD;
+to test the cronjob functions &#xD;
+docker exec -it &amp;lt;dockername&amp;gt; ./config/cronjob.sh</Overview>
+  <Category>Downloaders: Tools:</Category>
+  <WebUI/>
+  <TemplateURL>https://github.com/alturismo/unraid_templates</TemplateURL>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1563346892</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>a xml grabber for enigma with open webif&#xD;
+&#xD;
+after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them&#xD;
+&#xD;
+cron options are updated on docker restart.&#xD;
+cronjob changes doesnt require a restart.&#xD;
+&#xD;
+to test the cronjob functions &#xD;
+docker exec -it &amp;lt;dockername&amp;gt; ./config/cronjob.sh</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/owi2plex</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/TVH</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="/config" Target="/config" Default="/mnt/user/appdata/owi2plex/_config" Mode="rw" Description="config and cron setting" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="/owi2plex" Target="/owi2plex" Default="/mnt/user/appdata/owi2plex/" Mode="rw" Description="output folder" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="/TVH" Target="/TVH" Default="/mnt/user/appdata/tvheadend/data/" Mode="rw" Description="in case move to TVHeadend is enabled u need to mount this." Type="Path" Display="always" Required="false" Mask="false"/>
+</Container>
