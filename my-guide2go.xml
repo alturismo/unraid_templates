@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>guide2go</Name>
+  <Repository>alturismo/guide2go</Repository>
+  <Registry>https://hub.docker.com/r/alturismo/guide2go</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/alturismo/guide2go</Project>
+  <Overview>a xml grabber from schedule direct service&#xD;
+&#xD;
+after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them&#xD;
+&#xD;
+cron options are updated on docker restart.&#xD;
+cronjob changes doesnt require a restart.&#xD;
+&#xD;
+setup guide2go SD subscrition as follows or copy your existing .json files into your mounted /guide2go folder &#xD;
+docker exec -it &amp;lt;dockername&amp;gt; guide2go -configure /guide2go/&amp;lt;your_epg_name&amp;gt;.json&#xD;
+&#xD;
+to test the cronjob functions &#xD;
+docker exec -it &amp;lt;dockername&amp;gt; ./config/cronjob.sh</Overview>
+  <Category>Downloaders: Tools:</Category>
+  <WebUI/>
+  <TemplateURL>https://github.com/alturismo/unraid_templates</TemplateURL>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1563346379</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>a xml grabber from schedule direct service&#xD;
+&#xD;
+after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them&#xD;
+&#xD;
+cron options are updated on docker restart.&#xD;
+cronjob changes doesnt require a restart.&#xD;
+&#xD;
+setup guide2go SD subscrition as follows or copy your existing .json files into your mounted /guide2go folder &#xD;
+docker exec -it &amp;lt;dockername&amp;gt; guide2go -configure /guide2go/&amp;lt;your_epg_name&amp;gt;.json&#xD;
+&#xD;
+to test the cronjob functions &#xD;
+docker exec -it &amp;lt;dockername&amp;gt; ./config/cronjob.sh</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/guide2go</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/TVH</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="/config" Target="/config" Default="/mnt/user/appdata/guide2go/_config" Mode="rw" Description="config and cron setting" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="/guide2go" Target="/guide2go" Default="/mnt/user/appdata/guide2go/" Mode="rw" Description="output folder or where u can place your existing .json files" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="/TVH" Target="/TVH" Default="/mnt/user/appdata/tvheadend/data/" Mode="rw" Description="in case move to TVHeadend is enabled u need to mount this." Type="Path" Display="always" Required="false" Mask="false"/>
+</Container>
