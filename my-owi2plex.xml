@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support/>https://forums.unraid.net/topic/81786-support-alturismo-repos/</Support>
   <Project>https://github.com/alturismo/owi2plex</Project>
   <Overview>a xml grabber for enigma with open webif&#xD;
 &#xD;
@@ -60,7 +60,7 @@ docker exec -it &amp;lt;dockername&amp;gt; ./config/cronjob.sh</Description>
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="/config" Target="/config" Default="/mnt/user/appdata/owi2plex/config/" Mode="rw" Description="config and cron setting" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="/owi2plex" Target="/owi2plex" Default="/mnt/user/appdata/owi2plex/" Mode="rw" Description="output folder" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="/config" Target="/config" Default="" Mode="rw" Description="/mnt/user/appdata/owi2plex/_config/ --  config and cron setting" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="/owi2plex" Target="/owi2plex" Default="" Mode="rw" Description="/mnt/user/appdata/owi2plex/ --  output folder" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="/TVH" Target="/TVH" Default="" Mode="rw" Description="/mnt/user/appdata/tvheadend/data/  --  in case move to TVHeadend is enabled u need to mount this." Type="Path" Display="always" Required="false" Mask="false"/>
 </Container>
