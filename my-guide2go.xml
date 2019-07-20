@@ -66,7 +66,7 @@ docker exec -it &amp;lt;dockername&amp;gt; ./config/cronjob.sh</Description>
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="/config" Target="/config" Default="/mnt/user/appdata/guide2go/_config/" Mode="rw" Description="config and cron setting" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="/config" Target="/config" Default="/mnt/user/appdata/guide2go/config/" Mode="rw" Description="config and cron setting" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="/guide2go" Target="/guide2go" Default="/mnt/user/appdata/guide2go/" Mode="rw" Description="output folder or where u can place your existing .json files" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="/TVH" Target="/TVH" Default="" Mode="rw" Description="/mnt/user/appdata/tvheadend/data/  --  in case move to TVHeadend is enabled u need to mount this." Type="Path" Display="always" Required="false" Mask="false"/>
 </Container>
