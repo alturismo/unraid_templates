@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>https://forums.unraid.net/topic/81786-support-alturismo-repos/</Support>
+  <Support>https://forums.unraid.net/topic/81786-support-alturismo-repos/</Support>
   <Project>https://github.com/alturismo/owi2plex</Project>
   <Overview>a xml grabber for enigma with open webif&#xD;
 &#xD;
