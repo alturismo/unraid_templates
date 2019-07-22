@@ -21,14 +21,14 @@ docker exec -it &amp;lt;dockername&amp;gt; guide2go -configure /guide2go/&amp;lt
 &#xD;
 to test the cronjob functions &#xD;
 docker exec -it &amp;lt;dockername&amp;gt; ./config/cronjob.sh</Overview>
-  <Category>Downloaders: Tools:</Category>
+  <Category>Downloaders:</Category>
   <WebUI/>
   <TemplateURL>https://github.com/alturismo/unraid_templates/blob/master/my-guide2go.xml</TemplateURL>
   <Icon/>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1563346379</DateInstalled>
+  <DateInstalled>1563776686</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>a xml grabber from schedule direct service&#xD;
@@ -66,7 +66,7 @@ docker exec -it &amp;lt;dockername&amp;gt; ./config/cronjob.sh</Description>
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="/config" Target="/config" Default="" Mode="rw" Description="/mnt/user/appdata/guide2go/_config/  --  config and cron setting" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="/guide2go" Target="/guide2go" Default="/mnt/user/appdata/guide2go/" Mode="rw" Description="output folder or where u can place your existing .json files" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="/TVH" Target="/TVH" Default="" Mode="rw" Description="/mnt/user/appdata/tvheadend/data/  --  in case move to TVHeadend is enabled u need to mount this." Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="/config" Target="/config" Default="" Mode="rw" Description="/mnt/user/appdata/guide2go/_config/&#13;&#10;config and cron setting&#13;&#10;" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="/guide2go" Target="/guide2go" Default="" Mode="rw" Description="/mnt/user/appdata/guide2go/&#13;&#10;output folder or where u can place your existing .json files&#13;&#10;" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="/TVH" Target="/TVH" Default="" Mode="rw" Description="/mnt/user/appdata/tvheadend/data/&#13;&#10;in case move to TVHeadend is enabled u need to mount this.&#13;&#10;" Type="Path" Display="always" Required="false" Mask="false"/>
 </Container>
