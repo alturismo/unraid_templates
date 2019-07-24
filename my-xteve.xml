@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>xteve</Name>
+  <Repository>alturismo/xteve</Repository>
+  <Registry>https://hub.docker.com/r/alturismo/xteve</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/81786-support-alturismo-repos/</Support>
+  <Project>https://github.com/alturismo/xteve</Project>
+  <Overview>xteve, in docker with cron&#xD;
+&#xD;
+docker runs in host mode &#xD;
+access xteve webui ip:34400/web/&#xD;
+&#xD;
+after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them&#xD;
+&#xD;
+cron and xteve start options are updated on docker restart.</Overview>
+  <Category>MediaApp:Other Network:Proxy Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:34400]/web/</WebUI>
+  <TemplateURL>https://github.com/alturismo/unraid_templates/blob/master/my-xteve.xml</TemplateURL>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1563973407</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>xteve, in docker with cron&#xD;
+&#xD;
+docker runs in host mode &#xD;
+access xteve webui ip:34400/web/&#xD;
+&#xD;
+after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them&#xD;
+&#xD;
+cron and xteve start options are updated on docker restart.</Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/xteve/</HostDir>
+      <ContainerDir>/root/.xteve</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/xteve/config/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/tmp/xteve</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/TVH</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="/xteve" Target="/root/.xteve" Default="" Mode="rw" Description="Container Path: /root/.xteve" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/xteve/</Config>
+  <Config Name="/config" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/xteve/config/</Config>
+  <Config Name="/tmp" Target="/tmp/xteve" Default="" Mode="rw" Description="/tmp/xteve&#13;&#10;in case u want to move /tmp to RAM on host&#13;&#10;buffer, ..." Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="/TVH" Target="/TVH" Default="" Mode="rw" Description="/mnt/user/appdata/tvheadend/data/&#13;&#10;in case TVHeadend functions are used to move" Type="Path" Display="always" Required="false" Mask="false"/>
+</Container>
