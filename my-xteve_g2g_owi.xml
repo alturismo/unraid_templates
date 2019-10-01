@@ -32,7 +32,7 @@ some small script lines cause i personally use tvheadend and get playlist for xt
   <Category>Downloaders: Tools:</Category>
   <WebUI>http://[IP]:[PORT:34400]/web/</WebUI>
   <TemplateURL>https://github.com/alturismo/unraid_templates/blob/master/my-xteve_g2g_owi.xml</TemplateURL>
-  <Icon/>
+  <Icon>https://avatars0.githubusercontent.com/u/53275662?s=460&v=4</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
