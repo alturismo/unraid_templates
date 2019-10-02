@@ -20,7 +20,7 @@ cron and xteve start options are updated on docker restart.</Overview>
   <Category>MediaApp:Other Network:Proxy Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:34400]/web/</WebUI>
   <TemplateURL>https://github.com/alturismo/unraid_templates/blob/master/my-xteve.xml</TemplateURL>
-  <Icon>https://avatars0.githubusercontent.com/u/53275662?s=460&v=4</Icon>
+  <Icon>https://avatars0.githubusercontent.com/u/53275662?s=460&amp;amp;v=4</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
