@@ -24,7 +24,7 @@ docker exec -it &amp;lt;dockername&amp;gt; ./config/cronjob.sh</Overview>
   <Category>Downloaders:</Category>
   <WebUI/>
   <TemplateURL>https://github.com/alturismo/unraid_templates/blob/master/my-guide2go.xml</TemplateURL>
-  <Icon/>
+  <Icon/>https://raw.githubusercontent.com/alturismo/guide2go/master/g2g.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
