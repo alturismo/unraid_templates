@@ -11,26 +11,26 @@
   <Project/>
   <Overview>xTeVe is a M3U proxy server for Plex, Emby and any client and provider which supports the .TS and .M3U8 (HLS) streaming formats.&#xD;
 &#xD;
-Image Maintainer: LeeD &amp;lt;hostmaster@dnsforge.com&amp;gt;&#xD;
+Image Maintainer: LeeD &#xD;
 &#xD;
 For support come visit us at our xTeVe Discord channel: https://discord.gg/eWYquha&#xD;
 &#xD;
 For config, visit dockerhub link&#xD;
 &#xD;
 i just provided the template for unraid, for support see upper note</Overview>
-  <Category>Downloaders: MediaServer:Video Network:Proxy Status:Stable</Category>
+  <Category>Downloaders: MediaServer:Video Network:Proxy </Category>
   <WebUI>http://[IP]:[PORT:34400]/web/</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/alturismo/unraid_templates/master/my-dnsforge_xteve.xml</TemplateURL>
   <Icon/>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1577686648</DateInstalled>
+  <DateInstalled>1577739231</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>xTeVe is a M3U proxy server for Plex, Emby and any client and provider which supports the .TS and .M3U8 (HLS) streaming formats.&#xD;
 &#xD;
-Image Maintainer: LeeD &amp;lt;hostmaster@dnsforge.com&amp;gt;&#xD;
+Image Maintainer: LeeD &#xD;
 &#xD;
 For support come visit us at our xTeVe Discord channel: https://discord.gg/eWYquha&#xD;
 &#xD;
@@ -52,11 +52,6 @@ i just provided the template for unraid, for support see upper note</Description
       <ContainerDir>/home/xteve/guide2go/conf</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-    <Volume>
-      <HostDir/>
-      <ContainerDir>/tmp/xteve</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
   </Data>
   <Environment>
     <Variable>
@@ -65,17 +60,17 @@ i just provided the template for unraid, for support see upper note</Description
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
+      <Value>0</Value>
       <Name>XTEVE_DEBUG</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
+      <Value>master</Value>
       <Name>XTEVE_BRANCH</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
+      <Value>34400</Value>
       <Name>XTEVE_PORT</Name>
       <Mode/>
     </Variable>
@@ -83,9 +78,8 @@ i just provided the template for unraid, for support see upper note</Description
   <Labels/>
   <Config Name="xteve conf" Target="/home/xteve/conf" Default="" Mode="rw" Description="Container Path: /home/xteve/conf" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/xteve/</Config>
   <Config Name="guide2go conf" Target="/home/xteve/guide2go/conf" Default="" Mode="rw" Description="Container Path: /home/xteve/guide2go/conf" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/xteve/guide2go/</Config>
-  <Config Name="temp Dir" Target="/tmp/xteve" Default="" Mode="rw" Description="edit when u want to access tmp files&#13;&#10;sample usage&#13;&#10;&#13;&#10;/tmp/xteve&#13;&#10;for use in ramdisk from unraid&#13;&#10;&#13;&#10;/mnt/user/appdata/xteve/tmp/&#13;&#10;for use in appdata cache drive" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="true" Mask="false">Europe/London</Config>
-  <Config Name="xteve debug" Target="XTEVE_DEBUG" Default="0" Mode="" Description="optional set debug 0-3" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="xteve branch" Target="XTEVE_BRANCH" Default="master" Mode="" Description="optional set to beta" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="xteve port" Target="XTEVE_PORT" Default="34400" Mode="" Description="beware due host mode" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="xteve debug" Target="XTEVE_DEBUG" Default="0" Mode="" Description="optional set debug 0-3" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
+  <Config Name="xteve branch" Target="XTEVE_BRANCH" Default="master" Mode="" Description="optional set to beta" Type="Variable" Display="advanced" Required="false" Mask="false">master</Config>
+  <Config Name="xteve port" Target="XTEVE_PORT" Default="34400" Mode="" Description="beware due host mode" Type="Variable" Display="advanced" Required="false" Mask="false">34400</Config>
 </Container>
