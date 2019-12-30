@@ -21,7 +21,7 @@ docker exec -it &amp;lt;dockername&amp;gt; ./config/cronjob.sh</Overview>
   <Category>Downloaders:</Category>
   <WebUI/>
   <TemplateURL>https://github.com/alturismo/unraid_templates/blob/master/my-owi2plex.xml</TemplateURL>
-  <Icon/>https://raw.githubusercontent.com/alturismo/owi2plex/master/owi2plex.png</Icon>
+  <Icon>https://raw.githubusercontent.com/alturismo/owi2plex/master/owi2plex.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
