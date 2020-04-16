@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/81786-support-alturismo-repos/</Support>
   <Project>https://github.com/alturismo/xteve</Project>
-  <Overview>xteve, in docker with cron&#xD;
+  <Overview>xteve, in docker with cronjobs&#xD;
 &#xD;
 docker runs in host mode &#xD;
 access xteve webui ip:34400/web/&#xD;
