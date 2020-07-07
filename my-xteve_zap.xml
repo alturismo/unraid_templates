@@ -29,14 +29,14 @@ to test the cronjob functions&#xD;
 docker exec -it "dockername" ./config/cronjob.sh&#xD;
 &#xD;
 some small script lines cause i personally use tvheadend and get playlist for xteve and cp xml data to tvheadend</Overview>
-  <Category>Downloaders: Network:Proxy Status:Stable</Category>
+  <Category>Downloaders: Network:Proxy </Category>
   <WebUI/>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/alturismo/unraid_templates/master/my-xteve_zap.xml</TemplateURL>
   <Icon/>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1594140419</DateInstalled>
+  <DateInstalled>1594154377</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>xteve proxy for iptv&#xD;
@@ -65,22 +65,22 @@ some small script lines cause i personally use tvheadend and get playlist for xt
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/xteve/</HostDir>
+      <HostDir>/mnt/user/appdata/xteve_zap/</HostDir>
       <ContainerDir>/root/.xteve</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/xteve/_config/</HostDir>
+      <HostDir>/mnt/user/appdata/xteve_zap/_config/</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/xteve/_guide2go/</HostDir>
+      <HostDir>/mnt/user/appdata/xteve_zap/_guide2go/</HostDir>
       <ContainerDir>/guide2go</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/xteve/_zap/</HostDir>
+      <HostDir>/mnt/user/appdata/xteve_zap/_zap/</HostDir>
       <ContainerDir>/zap</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -103,10 +103,10 @@ some small script lines cause i personally use tvheadend and get playlist for xt
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Main" Target="/root/.xteve" Default="" Mode="rw" Description="Container Path: /root/.xteve" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/xteve/</Config>
-  <Config Name="config" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/xteve/_config/</Config>
-  <Config Name="guide2go" Target="/guide2go" Default="" Mode="rw" Description="Container Path: /guide2go" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/xteve/_guide2go/</Config>
-  <Config Name="zap" Target="/zap" Default="" Mode="rw" Description="Container Path: /zap" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/xteve/_zap/</Config>
+  <Config Name="Main" Target="/root/.xteve" Default="/mnt/user/appdata/xteve_zap/" Mode="rw" Description="Container Path: /root/.xteve" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/xteve_zap/</Config>
+  <Config Name="config" Target="/config" Default="/mnt/user/appdata/xteve_zap/_config/" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/xteve_zap/_config/</Config>
+  <Config Name="guide2go" Target="/guide2go" Default="" Mode="rw" Description="Container Path: /guide2go" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/xteve_zap/_guide2go/</Config>
+  <Config Name="zap" Target="/zap" Default="" Mode="rw" Description="Container Path: /zap" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/xteve_zap/_zap/</Config>
   <Config Name="TVH" Target="/TVH" Default="" Mode="rw" Description="Container Path: /TVH" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tvheadend/data/</Config>
   <Config Name="TZ" Target="TZ" Default="" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">Europe/Berlin</Config>
   <Config Name="tmp" Target="/tmp/xteve" Default="" Mode="rw" Description="Container Path: /tmp/xteve" Type="Path" Display="always" Required="false" Mask="false"/>
