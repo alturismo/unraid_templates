@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>hideme_privoxy</Name>
+  <Repository>alturismo/wg_hideme_privoxy</Repository>
+  <Registry>https://hub.docker.com/r/alturismo/wg_hideme_privoxy</Registry>
+  <Network>br0</Network>
+  <MyIP>192.168.1.80</MyIP>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://forums.unraid.net/topic/81786-support-alturismo-repos/</Support>
+  <Project>https://github.com/alturismo/wg_hideme_privoxy</Project>
+  <Overview>wireguard vpn client with privoxy and microsocks in docker&#xD;
+&#xD;
+its a hideme vpn client ONLY&#xD;
+&#xD;
+LOCAL_NET - CIDR mask of the local IP addresses which will acess the proxy and bypass it, comma seperated&#xD;
+HIDEME_SERVER - HideMe Server to use&#xD;
+HIDEME_FILE - configuration file, only edit when you know what you do&#xD;
+HIDEME_USER - your HideMe username for your vpn&#xD;
+HIDEME_PASS - your HideMe password for your vpn&#xD;
+TZ - Timezone, not relevant for function&#xD;
+&#xD;
+port 8080 privoxy - edit in bridge mode to fit your needs&#xD;
+port 1080 socks proxy - edit in bridge mode to fit your needs</Overview>
+  <Category>Network:Proxy Network:VPN</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/alturismo/wg_hideme_privoxy/main/hide-me-icon.png</Icon>
+  <ExtraParams>--cap-add=NET_ADMIN --device /dev/net/tun --sysctl net.ipv6.conf.all.disable_ipv6=0 --dns=8.8.8.8</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1609615494</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>wireguard vpn client with privoxy and microsocks in docker&#xD;
+&#xD;
+its a hideme vpn client ONLY&#xD;
+&#xD;
+LOCAL_NET - CIDR mask of the local IP addresses which will acess the proxy and bypass it, comma seperated&#xD;
+HIDEME_SERVER - HideMe Server to use&#xD;
+HIDEME_FILE - configuration file, only edit when you know what you do&#xD;
+HIDEME_USER - your HideMe username for your vpn&#xD;
+HIDEME_PASS - your HideMe password for your vpn&#xD;
+TZ - Timezone, not relevant for function&#xD;
+&#xD;
+port 8080 privoxy - edit in bridge mode to fit your needs&#xD;
+port 1080 socks proxy - edit in bridge mode to fit your needs</Description>
+  <Networking>
+    <Mode>br0</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/wg_hideme_privoxy/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>hideme.yaml</Value>
+      <Name>HIDEME_FILE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>username</Value>
+      <Name>HIDEME_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>password</Value>
+      <Name>HIDEME_PASS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>cz.hideservers.net</Value>
+      <Name>HIDEME_SERVER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>192.168.1.0/24</Value>
+      <Name>LOCAL_NET</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="/config" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/wg_hideme_privoxy/</Config>
+  <Config Name="HIDEME_FILE" Target="HIDEME_FILE" Default="" Mode="" Description="Container Variable: HIDEME_FILE" Type="Variable" Display="always" Required="false" Mask="false">hideme.yaml</Config>
+  <Config Name="HIDEME_USER" Target="HIDEME_USER" Default="" Mode="" Description="Container Variable: HIDEME_USER" Type="Variable" Display="always" Required="false" Mask="false">username</Config>
+  <Config Name="HIDEME_PASS" Target="HIDEME_PASS" Default="" Mode="" Description="Container Variable: HIDEME_PASS" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+  <Config Name="HIDEME_SERVER" Target="HIDEME_SERVER" Default="" Mode="" Description="Container Variable: HIDEME_SERVER" Type="Variable" Display="always" Required="false" Mask="false">cz.hideservers.net</Config>
+  <Config Name="LOCAL_NET" Target="LOCAL_NET" Default="" Mode="" Description="Container Variable: LOCAL_NET" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.0/24</Config>
+</Container>
