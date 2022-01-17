@@ -20,6 +20,8 @@ HIDEME_USER - your HideMe username for your vpn&#xD;
 HIDEME_PASS - your HideMe password for your vpn&#xD;
 TZ - Timezone, not relevant for function&#xD;
 &#xD;
+IMPORTANT, if ipv6 is active in your network, set in extra parameters ...disable_ipv6=1&#xD;
+&#xD;
 port 8080 privoxy - edit in bridge mode to fit your needs&#xD;
 port 1080 socks proxy - edit in bridge mode to fit your needs</Overview>
   <Category>Network:Proxy Network:VPN</Category>
@@ -42,6 +44,8 @@ HIDEME_FILE - configuration file, only edit when you know what you do&#xD;
 HIDEME_USER - your HideMe username for your vpn&#xD;
 HIDEME_PASS - your HideMe password for your vpn&#xD;
 TZ - Timezone, not relevant for function&#xD;
+&#xD;
+IMPORTANT, if ipv6 is active in your network, set in extra parameters ...disable_ipv6=1&#xD;
 &#xD;
 port 8080 privoxy - edit in bridge mode to fit your needs&#xD;
 port 1080 socks proxy - edit in bridge mode to fit your needs</Description>
