@@ -13,6 +13,8 @@
 &#xD;
 after docker start check your config folder, add your *.ovpn file(s) and edit logindata.conf&#xD;
 &#xD;
+IMPORTANT, if ipv6 is active in your network, set in extra parameters ...disable_ipv6=1&#xD;
+&#xD;
 use privoxy on ip:8118&#xD;
 use socks on ip:1080</Overview>
   <Category>Network:Proxy</Category>
@@ -28,6 +30,8 @@ use socks on ip:1080</Overview>
   <Description>openvpn with privoxy in docker with cron&#xD;
 &#xD;
 after docker start check your config folder, add your *.ovpn file(s) and edit logindata.conf&#xD;
+&#xD;
+IMPORTANT, if ipv6 is active in your network, set in extra parameters ...disable_ipv6=1&#xD;
 &#xD;
 use privoxy on ip:8118&#xD;
 use socks on ip:1080</Description>
