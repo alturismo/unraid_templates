@@ -13,6 +13,8 @@
 &#xD;
 ### docker runs in bridge mode ###&#xD;
 &#xD;
+IMPORTANT, if ipv6 is active in your network, set in extra parameters ...disable_ipv6=1&#xD;
+&#xD;
 put your ovpn file in /config&#xD;
 edit your ovpn credentials in /config&#xD;
 set your LOCAL_NET to fir your netmask&#xD;
@@ -31,6 +33,8 @@ access xteve webui ip:34400/web/</Overview>
   <Description>xteve, in docker with ovpn&#xD;
 &#xD;
 ### docker runs in bridge mode ###&#xD;
+&#xD;
+IMPORTANT, if ipv6 is active in your network, set in extra parameters ...disable_ipv6=1&#xD;
 &#xD;
 put your ovpn file in /config&#xD;
 edit your ovpn credentials in /config&#xD;
