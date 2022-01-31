@@ -17,7 +17,7 @@ access xteve webui ip:34400/web/&#xD;
 after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them&#xD;
 &#xD;
 cron and xteve start options are updated on docker restart.</Overview>
-  <Category>MediaApp:Other Network:Proxy Status:Beta</Category>
+  <Category>MediaApp:Other Network:Proxy</Category>
   <WebUI>http://[IP]:[PORT:34400]/web/</WebUI>
   <TemplateURL>https://github.com/alturismo/unraid_templates/blob/master/my-xteve.xml</TemplateURL>
   <Icon>https://avatars0.githubusercontent.com/u/53275662?s=460&amp;amp;v=4</Icon>
