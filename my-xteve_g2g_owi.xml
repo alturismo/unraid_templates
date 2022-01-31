@@ -17,8 +17,8 @@ after docker start check your config folder and do your setups, setup is persist
 &#xD;
 cron and xteve start options are updated on docker restart.&#xD;
 &#xD;
-setup guide2go SD subscrition as follows or copy your existing .json files into your mounted /guide2go folder &#xD;
-docker exec -it "dockername" guide2go -configure /guide2go/"your_epg_name".json&#xD;
+setup guide2go SD subscrition as follows or copy your existing .yaml files into your mounted /guide2go folder &#xD;
+docker exec -it "dockername" guide2go -configure /guide2go/"your_epg_name".yaml&#xD;
 &#xD;
 to test the cronjob functions &#xD;
 docker exec -it "dockername" ./config/cronjob.sh&#xD;
