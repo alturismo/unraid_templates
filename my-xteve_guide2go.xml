@@ -12,7 +12,7 @@
   <Overview>xteve, guide2go in one docker with cron&#xD;
 &#xD;
 setup guide2go SD subscrition as follows or copy your existing .json files into your mounted /guide2go folder &#xD;
-docker exec -it "dockername" guide2go -configure /guide2go/"your_epg_name".json&#xD;
+docker exec -it "dockername" guide2go -configure /guide2go/"your_epg_name".yaml&#xD;
 &#xD;
 to test the cronjob functions &#xD;
 docker exec -it &amp;lt;dockername&amp;gt; ./config/cronjob.sh&#xD;
@@ -40,8 +40,8 @@ some small script lines cause i personally use tvheadend and get playlist for xt
   <DonateLink/>
   <Description>xteve, guide2go in one docker with cron&#xD;
 &#xD;
-setup guide2go SD subscrition as follows or copy your existing .json files into your mounted /guide2go folder &#xD;
-docker exec -it "dockername" guide2go -configure /guide2go/"your_epg_name".json&#xD;
+setup guide2go SD subscrition as follows or copy your existing .yaml files into your mounted /guide2go folder &#xD;
+docker exec -it "dockername" guide2go -configure /guide2go/"your_epg_name".yaml&#xD;
 &#xD;
 to test the cronjob functions &#xD;
 docker exec -it &amp;lt;dockername&amp;gt; ./config/cronjob.sh&#xD;
