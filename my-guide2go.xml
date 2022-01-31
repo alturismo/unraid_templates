@@ -16,8 +16,8 @@ after docker start check your config folder and do your setups, setup is persist
 cron options are updated on docker restart.&#xD;
 cronjob changes doesnt require a restart.&#xD;
 &#xD;
-setup guide2go SD subscrition as follows or copy your existing .json files into your mounted /guide2go folder &#xD;
-docker exec -it &amp;lt;dockername&amp;gt; guide2go -configure /guide2go/&amp;lt;your_epg_name&amp;gt;.json&#xD;
+setup guide2go SD subscrition as follows or copy your existing .yaml files into your mounted /guide2go folder &#xD;
+docker exec -it &amp;lt;dockername&amp;gt; guide2go -configure /guide2go/&amp;lt;your_epg_name&amp;gt;.yaml&#xD;
 &#xD;
 to test the cronjob functions &#xD;
 docker exec -it &amp;lt;dockername&amp;gt; ./config/cronjob.sh</Overview>
