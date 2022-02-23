@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>xteve</Name>
+  <Name>xteve_dnsforge</Name>
   <Repository>dnsforge/xteve:latest</Repository>
   <Registry>https://hub.docker.com/r/dnsforge/xteve</Registry>
   <Network>host</Network>
