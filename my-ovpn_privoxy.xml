@@ -13,7 +13,12 @@
 &#xD;
 after docker start check your config folder, add your *.ovpn file(s) and edit logindata.conf&#xD;
 &#xD;
-IMPORTANT, if ipv6 is active in your network, set in extra parameters ...disable_ipv6=1&#xD;
+LOCAL_NET - CIDR mask of the local IP addresses which will acess the proxy and bypass it, comma seperated&#xD;
+OPENVPN_FILE - full path to ovpn file&#xD;
+OVPN_SOCKS - set to off if not wanted&#xD;
+OVPN_PRIVOXY - set to off if not wanted&#xD;
+ONLINECHECK - set to off if not wanted&#xD;
+ONLINECHECK_IP - default 8.8.4.4, change if wanted&#xD;
 &#xD;
 use privoxy on ip:8118&#xD;
 use socks on ip:1080</Overview>
@@ -75,4 +80,8 @@ use socks on ip:1080</Description>
   <Config Name="OPENVPN_FILE" Target="OPENVPN_FILE" Default="" Mode="" Description="Container Variable: OPENVPN_FILE" Type="Variable" Display="always" Required="true" Mask="false">Frankfurt.ovpn</Config>
   <Config Name="Port" Target="8080" Default="" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">8118</Config>
   <Config Name="Microsocks Port" Target="1080" Default="" Mode="tcp" Description="Container Port: 1080" Type="Port" Display="always" Required="false" Mask="false">1080</Config>
+  <Config Name="OVPN_PRIVOXY" Target="OVPN_PRIVOXY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">on</Config>
+  <Config Name="OVPN_SOCKS" Target="OVPN_SOCKS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">on</Config>
+  <Config Name="ONLINECHECK" Target="ONLINECHECK" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">on</Config>
+  <Config Name="ONLINECHECK_IP" Target="ONLINECHECK_IP" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">8.8.4.4</Config>
 </Container>
