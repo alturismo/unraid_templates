@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <PluginURL>https://raw.githubusercontent.com/alturismo/unraid-vm-cycle/master/vm-cycle.plg</PluginURL>
+  <PluginAuthor>alturismo</PluginAuthor>
+  <Beta>False</Beta>
+  <Requires>-</Requires>
+  <Category>Tools:</Category>
+  <Name>Cycle VM</Name>
+  <Description>This plugin is to switch VM's in the Background which shares the same PCIe Hardware.&#xD;
+sample GPU, to not be dependent on a 3rd party device</Description>
+  <Support>https://forums.unraid.net/topic/81786-support-alturismo-repos/</Support>
+  <Icon>https://raw.githubusercontent.com/alturismo/unraid-vm-cycle/main/Kvm-new-logo.png</Icon>
+</Containers>
