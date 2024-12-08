@@ -3,7 +3,6 @@
   <PluginURL>https://raw.githubusercontent.com/alturismo/unraid-vm-cycle/master/vm-cycle.plg</PluginURL>
   <PluginAuthor>alturismo</PluginAuthor>
   <Beta>False</Beta>
-  <Requires>-</Requires>
   <Category>Tools:</Category>
   <Name>Cycle VM</Name>
   <Description>This plugin is to switch VM's in the Background which shares the same PCIe Hardware.&#xD;
