@@ -3,7 +3,7 @@
   <PluginURL>https://raw.githubusercontent.com/alturismo/unraid-pwm-fan/master/pwm-fan.plg</PluginURL>
   <PluginAuthor>alturismo</PluginAuthor>
   <Beta>true</Beta>
-  <Requires>-</Requires>
+  <Requires></Requires>
   <Category>Tools:</Category>
   <Name>PWM Fan</Name>
   <Description>This plugin is to control pwm fans for CPU or HDD.&#xD;
