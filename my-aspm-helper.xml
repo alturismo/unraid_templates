@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <PluginURL>https://raw.githubusercontent.com/alturismo/unraid-aspm-helper/master/aspm-helper.plg</PluginURL>
+  <PluginAuthor>alturismo</PluginAuthor>
+  <Beta>true</Beta>
+  <Requires></Requires>
+  <Category>Tools:</Category>
+  <Name>ASPM Helper</Name>
+  <Description>This plugin is to help finding the proper aspm devices incl. root complex.&#xD;
+for adjustments to get better c-states</Description>
+  <Support>https://forums.unraid.net/topic/181843-support-alturismo-repos/</Support>
+  <Icon>https://raw.githubusercontent.com/alturismo/unraid-aspm-helper/main/aspm-helper.png</Icon>
+</Containers>
