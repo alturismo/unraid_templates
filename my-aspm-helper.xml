@@ -6,8 +6,8 @@
   <Requires></Requires>
   <Category>Tools:</Category>
   <Name>ASPM Helper</Name>
-  <Description>This plugin is to help finding the proper aspm devices incl root complex.&#xD;
-for adjustments to get better c states.</Description>
+  <Description>This plugin is to get Infos about your aspm device states and corresponding root complex.&#xD;
+to try and set the best working aspm states for the devices for better efficency</Description>
   <Support>https://forums.unraid.net/topic/181843-support-alturismo-repos/</Support>
   <Icon>https://raw.githubusercontent.com/alturismo/unraid-aspm-helper/main/aspm-helper.png</Icon>
 </Containers>
