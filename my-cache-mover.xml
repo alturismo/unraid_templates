@@ -7,7 +7,7 @@
   <Category>Tools:</Category>
   <Name>Cache Mover</Name>
   <Description>Plugin to move playing Media Files from array disks to a pool device in user Share.&#xD;
-while watching and keep them there by rules, incl. live switching in background.</Description>
+while watching and keep them there by rules, incl. live switching in background</Description>
   <Support>https://forums.unraid.net/topic/181843-support-alturismo-repos/</Support>
   <Icon>https://raw.githubusercontent.com/alturismo/unraid-cache-mover/main/cache-mover.png</Icon>
 </Containers>
