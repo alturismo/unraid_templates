@@ -2,7 +2,7 @@
 <Containers>
   <PluginURL>https://raw.githubusercontent.com/alturismo/unraid-simple-mover/master/simple-mover.plg</PluginURL>
   <PluginAuthor>alturismo</PluginAuthor>
-  <Beta>true</Beta>
+  <Beta>True</Beta>
   <Requires></Requires>
   <Category>Tools:</Category>
   <Name>Simple Mover</Name>
