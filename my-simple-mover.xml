@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <PluginURL>https://raw.githubusercontent.com/alturismo/unraid-simple-mover/master/simple-mover.plg</PluginURL>
+  <PluginAuthor>alturismo</PluginAuthor>
+  <Beta>True</Beta>
+  <Requires></Requires>
+  <Category>Tools:</Category>
+  <Name>Simple Mover</Name>
+  <Description>Simple mover addon, mainly considered for Media Files to keep on cache.&#xD;
+NO replacement for regular mover or mover tuning, actually mover tuning is mandatory for exclusion</Description>
+  <Support>https://forums.unraid.net/topic/181843-support-alturismo-repos/</Support>
+  <Icon>https://raw.githubusercontent.com/alturismo/unraid-simple-mover/main/simple-mover.png</Icon>
+</Containers>
