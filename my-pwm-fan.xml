@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <PluginURL>https://raw.githubusercontent.com/alturismo/unraid-pwm-fan/master/pwm-fan.plg</PluginURL>
+  <PluginAuthor>alturismo</PluginAuthor>
+  <Beta>False</Beta>
+  <Requires></Requires>
+  <Category>Tools:</Category>
+  <Name>PWM Fan</Name>
+  <Description>This plugin is to control pwm fans for CPU or HDD.&#xD;
+CPU single Fan mode, HDD multi Fan mode possible</Description>
+  <Support>https://forums.unraid.net/topic/181843-support-alturismo-repos/</Support>
+  <Icon>https://raw.githubusercontent.com/alturismo/unraid-pwm-fan/main/pwm_fan.png</Icon>
+</Containers>
